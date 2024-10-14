@@ -1,0 +1,31 @@
+package car.example.autowire.constructor;
+
+public class Specification {
+    //2 data members
+    private String make;
+    private String model;
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    @Override
+    public String toString() {
+        return "Specification{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                '}';
+    }
+}

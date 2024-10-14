@@ -1,0 +1,35 @@
+Ques-1: What are Beans?
+And-1: Objects that are managed by frameworks are called as Beans.
+
+Ques-2: How are Bean defined?
+Ans-2: A bean definition includes configuration metadata that the container needs to know to
+create and manage the bean
+
+Ques-3: What are Bean configurations and how it can be provided?
+Ans-3: Bean definitions can be provided in various ways, including XML configuration files,
+annotations and java based configuration.
+
+1- Beans are configured using XML files where each bean is defined within <bean> tags.
+With attributes specifying class, object and dependencies.
+
+2- Beans can be configured using annotations like @Component, @Service, @Repository etc.
+Which can be scanned by Spring anf managed as Beans.
+
+
+Ques:4: LIFECYCLE OF BEAN
+
+Instantiation --> Popular properties --> Initialization --> Ready to use --> Destruction
+
+Ques:5: DEPENDENCY INJECTION
+
+It is a design pattern in software development used to achieve loose coupling between classes by
+removing the direct dependency instantiation from the dependent class itself.
+
+Ques:6" Types of DI?
+
+1- Constructor Injection 1- Setter Injection
+
+Ques:7: What is CONSTRUCTOR INJECTION
+Simple language
+
+

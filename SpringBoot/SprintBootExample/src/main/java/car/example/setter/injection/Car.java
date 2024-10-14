@@ -1,0 +1,14 @@
+package car.example.setter.injection;
+
+public class Car {
+    private Specification specification;
+
+    //setter injection
+    public void setSpecification(Specification specification) {
+        this.specification = specification;
+    }
+
+    public void displayDetails() {
+        System.out.println("Car details : " +specification+toString());
+    }
+}

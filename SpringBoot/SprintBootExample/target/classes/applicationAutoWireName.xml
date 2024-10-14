@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <!--1-creating bean-->
+    <bean id="specification" class="car.example.autowire.name.Specification">
+        <!--here we are defining the property of MyBean class using property tag -->
+        <!--wiring definition-->
+        <property name="make" value="Tata"/>
+        <property name="model" value="Ne-xon"/>
+    </bean>
+
+    <!--2- Then we are injecting carSpecification bean via Setter-->
+<!--    make the bean byName specification, the injection happens using setter-->
+    <bean id="myCar" class="car.example.autowire.name.Car" autowire="byName"/>
+
+</beans>

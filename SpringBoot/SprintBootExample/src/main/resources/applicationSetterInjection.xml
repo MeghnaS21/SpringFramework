@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <!--1-creating bean-->
+    <bean id="carSpecification" class="car.example.setter.injection.Specification">
+        <!--here we are defining the property of MyBean class using property tag -->
+        <property name="make" value="Lamborghini"/>
+        <property name="model" value="Nexon"/>
+    </bean>
+    <!--2- Then we are injecting carSpecification bean via constructor-->
+    <bean id="myCar" class="car.example.setter.injection.Car">
+        <property name="specification" ref="carSpecification"/>
+    </bean>
+</beans>
